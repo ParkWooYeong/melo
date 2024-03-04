@@ -33,6 +33,7 @@ for member in members:
         posts_content = f'{member.content}{i+1}'
         post = Post(posts_tittle, posts_content, member.username)
         posts.append(post)
+        members.append(members0)
 
 특정_유저 = 'Help'
 
@@ -42,7 +43,6 @@ for member in members:
     print(f'{member.name}')
     for post in posts:
         if post.author == 특정_유저:
-            members.append(members0)
             print(post.title)
 
 특정_단어 = 'Wellcome'
