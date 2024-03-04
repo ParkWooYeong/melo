@@ -32,9 +32,13 @@ if __name__ == '__main__':
         number_game()
 
         re_try = input('다시 하시겠습니까? (y/n): ')
-
+    while True:
+        re_try = input('숫자를 써주세요:')
+    
         if not re_try.isdigit():
             print('y/n만 입력해주세요!')
+            continue
+            
         if re_try.lower() != 'y':
             print('게임을 종료합니다.')
             break
