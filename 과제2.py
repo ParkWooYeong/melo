@@ -60,8 +60,5 @@ def game_start():
             break
         elif re_try.lower() != 'n':
             print('게임을 다시 시작하오.')
-        win_count = 0
-        lose_count = 0
-        draw_count = 0
 if __name__ == '__main__':
     game_start()
