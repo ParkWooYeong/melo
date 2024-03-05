@@ -48,9 +48,13 @@ def game_start():
             lose_count += 1
         else:
             draw_count += 1
-
+    while True:
+            get_you_choice():
+        
         re_try = input('다시 하겠소? (y/n): ')
-
+        
+    while True:
+        
         if re_try.lower() != 'y':
             print('게임을 이만 끝내오.좋은 하루 되시오')
             print(f'총 게임 횟수: {win_count + lose_count + draw_count}')
